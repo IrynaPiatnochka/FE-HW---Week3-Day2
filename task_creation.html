@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Task</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c0f1c0; 
+    }
+    .container-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
+      width: 90%; 
+      max-width: 500px; 
+    }
+    .header-container {
+      background-color: #f0f0f0; 
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    #taskDescription {
+      height: 150px; 
+    }
+    h2 { text-align: center;}
+
+  </style>
+</head>
+<body>
+  <div class="container-box">
+    <div class="header-container">
+      <h2 class="mb-4">Add New Task</h2>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="taskName">Task Name</label>
+          <input type="text" class="form-control" id="taskName" placeholder="Enter task name" required>
+        </div>
+        <div class="form-group">
+          <label for="taskDescription">Description</label>
+          <textarea class="form-control" id="taskDescription" rows="5" placeholder="Enter task description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="dueDate">Due Date</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="dueDate" placeholder="Select due date" aria-describedby="dueDateAddon" required>
+            <div class="input-group-append">
+              <span class="input-group-text" id="dueDateAddon"><i class="far fa-calendar-alt"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery UI JS -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $( function() {
+      $( "#dueDate" ).datepicker();
+    } );
+
+  </script>
+  </body>
+</html>

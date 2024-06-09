@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .task-card {
+      margin-bottom: 20px;
+    }
+    .day-column {
+      width: 14.285%; 
+    }
+    .btn { margin: 10px;}
+
+    body {
+        background-color: #c0f1c0; 
+    }
+
+    .container {
+      background-color: #c0f1c0; 
+      padding-top: 20px; 
+      width: 100%; 
+      max-width: 100%;
+    }
+
+    .table {
+      background-color: #fff; 
+      border-color: #006400; 
+    }
+
+    .table th,
+    .table td {
+      border-color: #006400; 
+    } 
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5 mb-3">
+      <div class="col text-center">
+        <h1>Task Dashboard</h1>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="row mb-3">
+      <div class="col text-left">
+        <a href="home_page.html" class="btn btn-primary">Home</a>
+      </div>
+      <div class="col text-right">
+        <a href="task_creation.html" class="btn btn-success">Create Task</a>
+        <a href="task_page.html" class="btn btn-info">View Tasks</a> 
+      </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+            </td>
+            <td class="day-column">
+                <div class="task-card">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Task 1</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due Date: July 1, 2024</h6>
+                    <p class="card-text">Brief description of Task 1.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Edit</a>
+                    <a href="#" class="btn btn-danger mt-auto">Delete</a>
+                  </div>
+                </div>
+              </td>
+              <td class="day-column">
+                <div class="task-card">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Task 2</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due Date: July 5, 2024</h6>
+                    <p class="card-text">Brief description of Task 2.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Edit</a>
+                    <a href="#" class="btn btn-danger mt-auto">Delete</a>
+                  </div>
+                </div>
+              </td>
+              <td class="day-column">
+                <div class="task-card">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Task 3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due Date: July 2, 2024</h6>
+                    <p class="card-text">Brief description of Task 3.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Edit</a>
+                    <a href="#" class="btn btn-danger mt-auto">Delete</a>
+                  </div>
+                </div>
+              </td>
+              <td class="day-column">
+                <div class="task-card">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Task 4</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due Date: July 3, 2024</h6>
+                    <p class="card-text">Brief description of Task 4.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Edit</a>
+                    <a href="#" class="btn btn-danger mt-auto">Delete</a>
+                  </div>
+                </div>
+              </td>
+              <td class="day-column">
+                <div class="task-card">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Task 5</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Due Date: July 4, 2024</h6>
+                    <p class="card-text">Brief description of Task 5.</p>
+                    <a href="#" class="btn btn-primary mt-auto">Edit</a>
+                    <a href="#" class="btn btn-danger mt-auto">Delete</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="createTaskModal" tabindex="-1" role="dialog" aria-labelledby="createTaskModalLabel" aria-hidden="true">
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
